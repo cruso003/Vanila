@@ -66,6 +66,12 @@ export default function TabsLayout() {
           tabBarIcon: ({ focused }) => <TabIcon name="profile" focused={focused} />,
         }}
       />
+      <Tabs.Screen
+        name="chat"
+        options={{
+          href: null, // Hide from tab bar
+        }}
+      />
     </Tabs>
   );
 }

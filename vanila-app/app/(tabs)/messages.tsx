@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, ScrollView, TouchableOpacity, SafeAreaView } from 'react-native';
+import { router } from 'expo-router';
 
 interface MessageItemProps {
   name: string;
@@ -17,7 +18,9 @@ const MessageItem: React.FC<MessageItemProps> = ({
   isTyping = false,
 }) => {
   return (
-    <TouchableOpacity className="border-b border-gray-100 bg-white px-6 py-4">
+    <TouchableOpacity
+      className="border-b border-gray-100 bg-white px-6 py-4"
+      onPress={() => router.push('/(tabs)/chat')}>
       <View className="flex-row items-center">
         {/* Profile Image */}
         <View className="mr-4 h-14 w-14 items-center justify-center rounded-full bg-purple-100">

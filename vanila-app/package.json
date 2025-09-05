@@ -12,10 +12,11 @@
   },
   "dependencies": {
     "expo": "^53.0.22",
+    "expo-router": "~5.1.5",
     "expo-status-bar": "~2.2.3",
     "nativewind": "latest",
     "react": "19.0.0",
-    "react-native": "0.79.5",
+    "react-native": "0.79.6",
     "react-native-reanimated": "~3.17.4",
     "react-native-safe-area-context": "5.4.0"
   },
